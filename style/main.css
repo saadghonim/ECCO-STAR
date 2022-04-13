@@ -2085,7 +2085,7 @@ html[dir="ltr"] .brands .owl-nav button.owl-next {
 }
 
 .anc_brand_b img {
-  max-width: 100% !important;
+  max-width: 100%;
 }
 
 @media only screen and (max-width: 767px) {
@@ -2133,7 +2133,7 @@ html[dir="ltr"] .brands .owl-nav button.owl-next {
     display: none;
   }
   .anc_brand_b {
-    width: 100px;
+    max-width: 105px;
   }
 }
 /*# sourceMappingURL=main.css.map */

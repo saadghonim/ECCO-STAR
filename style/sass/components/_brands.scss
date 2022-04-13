@@ -48,7 +48,7 @@
   width: 140px;
   margin: auto;
   img {
-    max-width: 100% !important;
+    max-width: 100%;
   }
 }
 
@@ -64,6 +64,6 @@
     }
   }
   .anc_brand_b {
-    width: 100px;
+    max-width: 105px;
   }
 }

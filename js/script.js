@@ -50,7 +50,7 @@ $('.slider .owl-carousel').owlCarousel({
 $('.Category .owl-carousel').owlCarousel({
   loop:true,
   nav:true,
-  // autoplay:true,
+  autoplay:true,
   margin:30,
   navText: ["<i class='las la-angle-right'></i>", "<i class='las la-angle-left'></i>"],
   rtl: $("html").attr("dir") == "rtl" ? true : false,
@@ -75,7 +75,7 @@ $('.Bestseller .owl-carousel').owlCarousel({
   loop:true,
   nav:true,
   stagePadding: 1,
-  // autoplay:true,
+  autoplay:true,
   margin:30,
   navText: ["<i class='las la-angle-right'></i>", "<i class='las la-angle-left'></i>"],
   rtl: $("html").attr("dir") == "rtl" ? true : false,
@@ -100,13 +100,14 @@ $('.brands .owl-carousel').owlCarousel({
   loop:true,
   nav:true,
   // autoplay:true,
+  stagePadding: 5,
   margin:30,
   navText: ["<i class='las la-angle-right'></i>", "<i class='las la-angle-left'></i>"],
   rtl: $("html").attr("dir") == "rtl" ? true : false,
   responsive:{
       0:{
           items:3,
-          margin:15
+          margin:10
       },
       600:{
           items:4
