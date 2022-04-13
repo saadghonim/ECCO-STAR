@@ -5,10 +5,11 @@
     gap: 30px;
 
     .anc_banner {
-      overflow: hidden;
+      overflow: hidden!important;
       position: relative!important;
       display: block;
       transition: 0.5s;
+      text-align: center;
       img {
         max-width: 100%;
       }

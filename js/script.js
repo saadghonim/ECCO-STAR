@@ -45,11 +45,7 @@ $('.slider .owl-carousel').owlCarousel({
 })
 /*~~~~~~~~~~~~~~~~~~end slider~~~~~~~~~~~~~~~~~ */
 /*~~~~~~~~~~~~~~~~~~start new~~~~~~~~~~~~~~~~~~ */
-if ($(window).width() <= 767 ){
-  $(".remove_").removeClass("row");
 
-
-}
 
 /*~~~~~~~~~~~~~~~~~~end new~~~~~~~~~~~~~~~~~~~~ */
 
@@ -127,8 +123,8 @@ $('.brands .owl-carousel').owlCarousel({
 /*~~~~~~~~~~~~~~~~~~end Bestseller~~~~~~~~~~~~~~~~~~~~ */
 
 
-$(window).load(function() {
-  $(".preloader-sa").fadeOut();
-});
 
 });
+
+new WOW().init();
+document.documentElement.style.setProperty('--animate-duration', '.8s');
