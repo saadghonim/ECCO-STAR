@@ -528,7 +528,7 @@ nav .close_ {
   nav .close_ {
     position: absolute;
     top: 30px;
-    font-size: 16px;
+    font-size: 25px;
     color: #000000;
     -webkit-transition: 0.5s;
     transition: 0.5s;
@@ -1372,7 +1372,7 @@ html[dir="ltr"] .slider_parant .slider .owl-nav button.owl-next {
 }
 
 .Category_parant .Category .owl-dots {
-  bottom: -35px;
+  bottom: -23px;
 }
 
 .Category_parant .Category h3 {
@@ -2008,7 +2008,7 @@ html[dir="ltr"] .brands .owl-nav button.owl-next {
 
 @media only screen and (max-width: 767px) {
   .brands {
-    padding: 50px 0;
+    padding: 40px 0 50px;
   }
   .brands .owl-dots {
     display: none;
@@ -2045,136 +2045,13 @@ html[dir="ltr"] .brands .owl-nav button.owl-next {
 
 @media only screen and (max-width: 767px) {
   .brands .owl-dots {
-    bottom: -23px;
+    bottom: -30px;
   }
   .brands .owl-nav {
     display: none;
   }
   .anc_brand_b {
     width: auto;
-  }
-}
-
-.preloader-sa {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #ffcf03;
-  z-index: 999999;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.clock {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.clock::before {
-  content: "";
-  position: absolute;
-  border-radius: 50%;
-  border: 3px solid;
-}
-
-.clock::after {
-  content: "";
-  position: absolute;
-  border-radius: 50%;
-  border: 3px solid;
-}
-
-.clock:before {
-  --deg: 360deg;
-  height: 200px;
-  width: 200px;
-  border-color: #ffffff transparent transparent;
-  -webkit-animation: spin 2s infinite linear;
-          animation: spin 2s infinite linear;
-}
-
-.clock:after {
-  --deg: -360deg;
-  height: 180px;
-  width: 180px;
-  border-color: transparent transparent #ffffff;
-  -webkit-animation: spin 1500ms infinite linear;
-          animation: spin 1500ms infinite linear;
-}
-
-.pointers {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  border: 5px solid #ffffff;
-  border-radius: 50%;
-}
-
-.pointers:before,
-.pointers:after {
-  content: "";
-  position: absolute;
-  border: 2px solid;
-  z-index: -1;
-  -webkit-transform-origin: 2px 0;
-          transform-origin: 2px 0;
-}
-
-.pointers:before {
-  height: 70px;
-  border-color: #a4cdf8;
-  -webkit-animation: spin 1s infinite linear;
-          animation: spin 1s infinite linear;
-}
-
-.pointers:after {
-  height: 40px;
-  border-color: #a4cdf8;
-  -webkit-animation: spin 6s infinite linear;
-          animation: spin 6s infinite linear;
-}
-
-@-webkit-keyframes spin {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(var(--deg, 360deg));
-            transform: rotate(var(--deg, 360deg));
-  }
-}
-
-@keyframes spin {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(var(--deg, 360deg));
-            transform: rotate(var(--deg, 360deg));
   }
 }
 /*# sourceMappingURL=main.css.map */
