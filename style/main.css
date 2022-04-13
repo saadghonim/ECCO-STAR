@@ -88,7 +88,6 @@
 }
 
 .input_div_parant {
-  z-index: 99;
   width: 627px;
 }
 
@@ -150,7 +149,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  z-index: 99;
 }
 
 html[dir="rtl"] .input_div_parant .input_div_t .btn_search {
