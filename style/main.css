@@ -493,6 +493,8 @@ nav .close_ {
     background-color: #ffffff;
     display: none;
     z-index: 99;
+    -webkit-transition: none;
+    transition: none;
   }
   nav .div_lang_parant {
     display: -webkit-box;

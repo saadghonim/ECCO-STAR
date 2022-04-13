@@ -383,6 +383,7 @@ nav {
     background-color: $color_1;
     display: none;
     z-index: 99;
+    transition: none;
     .div_lang_parant {
       display: flex;
     }
