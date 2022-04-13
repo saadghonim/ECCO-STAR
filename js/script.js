@@ -1,11 +1,7 @@
 
 $(document).ready(function(){
 /*~~~~~~~~~~~~~~~~~~start header~~~~~~~~~~~~~~~~~ */
-// ~~~~~~~~~~~~btn search
-$(".search_m").click(function(){
-  $(".input_div_parant").slideToggle("500");
-  $(".toggle_.la-search").toggleClass("la-times")
-});
+
 
 // ~~~~~~~~~~~~~~~~
 // ~~~~~~~~~~~~navbar
@@ -122,9 +118,39 @@ $('.brands .owl-carousel').owlCarousel({
 });
 /*~~~~~~~~~~~~~~~~~~end Bestseller~~~~~~~~~~~~~~~~~~~~ */
 
+var btn = $('.back_top');
 
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 100) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '500');
+});
+
+$(window).on('scroll', function() {
+  if($(window).scrollTop() > 150) {
+        $("nav").addClass("fixed");
+  } else {
+      $("nav").removeClass("fixed");
+  };
+});
 
 });
 
 new WOW().init();
 document.documentElement.style.setProperty('--animate-duration', '.8s');
+
+
+var fixedBar = document.querySelector("nav"),
+  prevScrollpos = $(window).scrollTop();
+
+window.onscroll = function() {
+  var o = $(window).scrollTop();
+  prevScrollpos < o && prevScrollpos > 0 ? fixedBar.classList.add("fixsedt") : fixedBar.classList.remove("fixsedt"), prevScrollpos = o
+}, document.documentElement.style.setProperty("--animate-duration", ".5s");

@@ -138,6 +138,7 @@
   }
   @include xs{
     .owl-dots{
+
       display: block;
     }
   }
@@ -163,7 +164,7 @@
       justify-content: center;
       &:hover {
         background-color: $color_3;
-        color: $color_1;
+        color: $main_color;
       }
     }
 

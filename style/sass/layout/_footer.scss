@@ -16,7 +16,7 @@ footer {
         font-weight: 500;
         line-height: 2;
         transition: 0.5s;
-        color: #5c5c5c;
+        color: #959595;
         &:hover {
           color: $color_3;
           @include ar {
@@ -40,7 +40,7 @@ footer {
     }
     p {
       font-size: $font_s;
-      color: #5c5c5c;
+      color: #959595;
       font-weight: 500;
       margin-bottom: 20px;
     }
@@ -93,7 +93,7 @@ footer {
     a {
       color: $color_1;
       margin: 15px;
-      font-size: $font_s + 6;
+      font-size: $font_s * 2 - 2;
       transition: 0.5s;
       display: flex;
       justify-content: center;
@@ -135,11 +135,6 @@ footer {
     }
     .ul_social {
       justify-content: center;
-      li {
-        a {
-          margin: 0 5px;
-        }
-      }
     }
     .f_div {
       .f_btn {
