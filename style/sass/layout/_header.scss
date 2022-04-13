@@ -206,8 +206,10 @@ nav {
       padding: 13px 0;
       &:last-child{
         .ul_drop{
-
           right: -90px;
+          @include en{
+            left: -77px;
+          }
         }
       }
       .anc_nav {

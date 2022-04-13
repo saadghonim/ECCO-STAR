@@ -304,6 +304,10 @@ nav .ul_nav > li:last-child .ul_drop {
   right: -90px;
 }
 
+html[dir="ltr"] nav .ul_nav > li:last-child .ul_drop {
+  left: -77px;
+}
+
 nav .ul_nav > li .anc_nav {
   font-size: 16px;
   color: #000000;
