@@ -12,7 +12,7 @@
 }
 .header_top h3 {
   text-transform: uppercase;
-  font-size: $font_s - 2;
+  font-size: $font_s - 4;
   color: $color_2;
   font-weight: 400;
 }
@@ -24,6 +24,10 @@
   font-size: $font_s - 2;
   color: $main_color;
   font-weight: 400;
+  @include ar{
+  font-size: $font_s - 4;
+
+  }
   img {
     margin-inline-end: 3px;
   }
@@ -80,6 +84,9 @@
       color: $color_2;
       font-weight: 400;
       border: 1px solid $color_4;
+      @include ar{
+        font-size: 12px;
+      }
       &::placeholder {
         color: $color_2;
       }
@@ -126,6 +133,9 @@
     color: $main_color;
     font-weight: 400;
     margin-inline-start: 10px;
+    @include ar{
+      font-size: 14px;
+    }
     i {
       font-size: $font_s * 2 - 2;
     }
@@ -199,10 +209,13 @@ nav {
   background-color: $color_3;
   .ul_nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     > li {
       padding: 13px 0;
+      &:not(:last-child){
+        margin-inline-end: 26px;
+      }
       &:last-child{
         .ul_drop{
           right: -90px;
@@ -218,6 +231,9 @@ nav {
         transition: 0.5s;
         text-transform: capitalize;
         display: inline-block;
+        @include ar{
+          font-size: 14px;
+        }
         &:hover {
           text-decoration: underline;
         }
@@ -249,6 +265,9 @@ nav {
           font-family: "Tajawal";
           transition: 0.5s;
           text-transform: capitalize;
+          @include ar{
+            font-size: 14px;
+          }
           &:hover {
             color: $color_3;
           }
@@ -470,6 +489,9 @@ nav {
           .anc_menu{
             margin-bottom: 5px;
             color: $main_color;
+            @include ar{
+              font-size: 14px;
+            }
           }
         }
       }
@@ -480,18 +502,19 @@ nav {
 .back_top {
   display: flex;
   align-items: center;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   position: fixed;
-  bottom: 30px;
-  right: 30px;
+  bottom: 10px;
+  right: 10px;
   transition: background-color .3s, opacity .5s, visibility .5s;
   opacity: 0;
   visibility: hidden;
   box-shadow: 0 3px 6px rgba(255, 255, 255, 0.15), 0 3px 6px rgba(255, 255, 255, 0.20);
   z-index: 1000;
-  background-color: #0000004d!important;
+  background-color: $color_1!important;
+
   &:hover {
     cursor: pointer;
     background-color: $color_3!important;
@@ -504,28 +527,15 @@ nav {
     content: "";
     font-family: "line Awesome Free";
     font-weight: 900;
-    font-size: 25px;
-    color: $color_1;
+    font-size: 18px;
+    color: $main_color;
 
-  }
-  &:active {
-    background-color: #000!important;
-    &::after{
-      color: $color_1 ;
-    }
   }
 }
 
 .back_top.show {
   opacity: 1;
   visibility: visible;
-}
-
-@media (min-width: 500px) {
-
-  .back_top {
-    margin: 30px;
-  }
 }
 
 
@@ -539,3 +549,4 @@ nav {
 .fixsedt {
   top: -130px;
 }
+

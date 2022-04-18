@@ -43,6 +43,10 @@ footer {
       color: #959595;
       font-weight: 500;
       margin-bottom: 20px;
+      @include ar{
+      font-size: $font_s - 2;
+        
+      }
     }
     .input_div {
       position: relative;
@@ -170,17 +174,7 @@ footer {
     }
   }
 }
-.©_ECCO_STAR_2022__all_rights_reserved {
-  font-size: 14px;
-  font-family: "Tajawal";
-  color: #5c5c5c;
-  line-height: 2.143;
-  text-align: left;
-  position: absolute;
-  left: 129.938px;
-  top: 4477.567px;
-  z-index: 42;
-}
+
 
 .copyright_parant {
   background-color: #050505;

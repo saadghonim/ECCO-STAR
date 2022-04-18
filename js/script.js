@@ -155,3 +155,4 @@ window.onscroll = function() {
   var o = $(window).scrollTop();
   prevScrollpos < o && prevScrollpos > 0 ? fixedBar.classList.add("fixsedt") : fixedBar.classList.remove("fixsedt"), prevScrollpos = o
 }, document.documentElement.style.setProperty("--animate-duration", ".5s");
+

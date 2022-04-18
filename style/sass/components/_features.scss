@@ -16,6 +16,9 @@
     font-size: $font_s + 2;
     font-weight: $font_b;
     color: $main_color;
+    @include ar{
+      font-size: 14px;
+    }
   }
 }
 
